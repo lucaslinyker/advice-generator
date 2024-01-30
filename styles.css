@@ -1,0 +1,28 @@
+:root {
+    /* Primary */
+    --light-cyan: #cee3e9;
+    --neo-green: #52ffa8;
+    /* Neutral */
+    --grayish-blue: #4e5d73;
+    --dark-grayish-blue: #323a49;
+    --dark-blue: #1f2632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--dark-blue);
+    color: var(--light-cyan);
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
