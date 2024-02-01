@@ -25,4 +25,83 @@ body {
     align-items: center;
     min-height: 100vh;
     width: 100%;
+    position: relative;
+}
+
+.card {
+    min-width: 300px;
+    max-width: 540px;
+    border-radius: 10px;
+    margin-inline: 40px;
+    padding: 40px 19px;
+    text-align: center;
+    background-color: var(--dark-grayish-blue);
+    position: relative;
+}
+
+.card__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--neo-green);
+    margin-bottom: 20px;
+}
+
+.card__advice {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.card__divider {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card__button {
+    border-radius: 50%;
+    padding: 20px;
+    border: none;
+    background-color: var(--neo-green);
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 50%);
+    transition: background-color .1s linear, box-shadow 150ms linear;
+}
+
+.card__button:hover {
+    box-shadow: 0 0 30px 0 var(--neo-green);
+}
+
+.card__button:active {
+    background-color: #3ab975;
+}
+
+.button__icon {
+    display: block;
+}
+
+.acknowledgments {
+    font-size: 11px;
+    color: var(--grayish-blue);
+    position: absolute;
+    bottom: 10px;
+}
+
+.acknowledgments__link {
+    color: var(--grayish-blue);
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.acknowledgments__link:hover {
+    text-decoration: underline;
+    color: var(--light-cyan);
+}
+
+@media (max-width: 425px) {
+    .card {
+        margin-inline: 20px;
+    }
 }
