@@ -12,16 +12,16 @@
 </head>
 <body>
   <main class="card">
-    <h1 class="card__title">Advice # <span>117</span></h1>
+    <h1 class="card__title">Advice # <span id="code"></span></h1>
 
-    <p class="card__advice">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
+    <p class="card__advice" id="advice-text"></p>
 
     <picture>
       <source media="(min-width: 440px)" srcset="images/pattern-divider-desktop.svg">
       <img class="card__divider" src="images/pattern-divider-mobile.svg" alt="Pattern divider">
     </picture>
 
-    <button class="card__button" type="button">
+    <button class="card__button" id="button" type="button">
       <img class="button__icon" src="images/icon-dice.svg" alt="Icon dice">
     </button>
   </main>
@@ -30,5 +30,7 @@
     Challenge by <a class="acknowledgments__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a class="acknowledgments__link" href="https://github.com/lucaslinyker" target="_blank">Lucas Linyker</a>.
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
