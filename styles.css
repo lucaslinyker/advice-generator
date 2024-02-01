@@ -36,7 +36,13 @@ body {
     padding: 40px 19px;
     text-align: center;
     background-color: var(--dark-grayish-blue);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.250);
+    transition: box-shadow 150ms linear;
     position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.350);
 }
 
 .card__title {
@@ -62,12 +68,13 @@ body {
     padding: 20px;
     border: none;
     background-color: var(--neo-green);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.500);
     cursor: pointer;
     position: absolute;
     left: 50%;
     bottom: 0%;
     transform: translate(-50%, 50%);
-    transition: background-color .1s linear, box-shadow 150ms linear;
+    transition: background-color 150ms linear, box-shadow 150ms linear;
 }
 
 .card__button:hover {
@@ -92,7 +99,7 @@ body {
 .acknowledgments__link {
     color: var(--grayish-blue);
     text-decoration: none;
-    transition: color .2s linear;
+    transition: color 150ms linear;
 }
 
 .acknowledgments__link:hover {
